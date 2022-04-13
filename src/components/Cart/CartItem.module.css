@@ -1,0 +1,79 @@
+.cartItem {
+    margin: 1rem 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.08rem solid var(--darkBrown);
+}
+
+.info {
+    width: 40%;
+    max-width: 15rem;
+}
+
+.info__numbers {
+    max-width: 10rem;
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info__numbers > p {
+    font-weight: 700;
+    color: var(--darkBrown);
+}
+
+.info__numbers > h3 {
+    font-size: 1rem;
+    padding: 0.2rem 0.75rem;
+    border: 1px solid rgba(164, 164, 164, 0.644);
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: normal;
+}
+
+.buttons button {
+    margin-left: 1rem;
+    padding: 0.1rem 1.2rem 0.2rem 1.2rem;
+    /* font-family: 'Times New Roman', Times, serif; */
+    /* font-weight: bold; */
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: var(--white);
+    color: var(--darkBrown);
+    border-radius: 7px;
+    border: 1px solid var(--darkBrown);
+
+}
+
+.buttons:last-child {
+    margin-left: 0.5rem;
+    /* border: 1px solid var(--darkBrown); */
+}
+
+.buttons button:hover {
+    background-color: var(--darkBrown);
+    border: 1px solid var(--darkBrown);
+    color: var(--white);
+
+}
+
+@media screen and (max-width: 768px) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons button:last-child {
+        margin-top: 0.4rem;
+    }
+
+    .info {
+        width: 70%;
+    }
+}

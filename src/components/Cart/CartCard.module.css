@@ -1,0 +1,62 @@
+.cartCard {
+    width: 90%;
+    max-width: 40rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 3;
+    /* animation: orderListAppear 1s ease-out forwards; */
+}
+
+.cartCard__card {
+     background-color: var(--white);
+    color: rgb(34, 33, 33);
+}
+
+.cartCard__info {
+    margin: 2rem 0 1rem 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: normal;
+}
+
+.buttons__close, .buttons__order {
+    padding: 0.5rem 2rem;
+    font-weight: 400;
+}
+
+.buttons__order {
+    margin-left: 1rem;
+    border: 1px solid var(--darkBrown);
+}
+
+.buttons__close {
+    background-color: var(--white);
+    color: var(--darkBrown);
+    border: 1px solid var(--darkBrown);
+}
+
+.buttons__close:hover, .buttons__order:hover {
+    background-color: var(--veryDarkBrown);
+    border: 1px solid var(--veryDarkBrown);
+    color: var(--white);
+
+}
+
+@keyframes orderListAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

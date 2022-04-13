@@ -1,0 +1,15 @@
+.inputForm__input {
+    /* max-width: 10rem; */
+    font-size: 1rem;
+    height: 1.8rem;
+    border: 1px solid rgba(164, 164, 164, 0.644);
+    border-radius: 5px;
+}
+
+.inputForm__input:focus {
+    border: 2px solid rgb(16, 16, 16); 
+}
+
+.inputForm__label {
+    font-weight: bold;
+}
