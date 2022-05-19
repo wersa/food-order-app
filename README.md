@@ -9,6 +9,6 @@ Code from the tutorial: https://github.com/academind/react-complete-guide-code/t
 - portals
 
 ## To-do
-- [] Fix background of overlay
-- [] Add form validation
-- []
+- [ ] Fix background of overlay
+- [ ] Add form validation
+
