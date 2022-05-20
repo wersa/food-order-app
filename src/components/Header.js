@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState } from 'react'
 import CartButton from './CartButton'
 import CartCard from './Cart/CartCard';
 

@@ -1,4 +1,4 @@
-import React, { useState, useReducer } from "react";
+import React, { useState } from "react";
 import Button from "../UI/Button";
 
 import Input from "../UI/Input";
@@ -12,7 +12,7 @@ const CartForm = (props) => {
     code: "",
     city: "",
   });
-  const [isSubmited, setIsSubmited] = useState(false);
+  // const [isSubmited, setIsSubmited] = useState(false);
 
 
   const handleChange = (event) => {

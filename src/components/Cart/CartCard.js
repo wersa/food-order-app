@@ -1,6 +1,4 @@
-import React, { useEffect, useRef, useContext, useState } from "react";
-import ReactDom from "react-dom";
-
+import React, { useRef, useContext, useState } from "react";
 import CartList from "./CartList";
 import CartForm from "./CartForm";
 
@@ -16,27 +14,6 @@ const CartCard = (props) => {
   const [isOrdered, setIsOrdered] = useState(false);
   const cartCtx = useContext(CartContext);
   const cartRef = useRef(null);
-  // const { onClickOutside } = props;
-
-  // handle closing of a cart
-  // useEffect(() => {
-  //   const handleClickOutside = (event) => {
-  //     if (cartRef.current && !cartRef.current.contains(event.target)) {
-  //       onClickOutside && onClickOutside();
-  //     }
-  //   };
-  //   document.addEventListener("click", handleClickOutside, true);
-  //   console.log("ADD EVENT LISTENER");
-
-  //   return () => {
-  //     document.removeEventListener("click", handleClickOutside, true);
-  //     console.log("REMOVE EVENT LISTENER");
-  //   };
-  // }, [onClickOutside]);
-
-  // if (!props.isShown) {
-  //   return null;
-  // }
 
   const clickOrderHandler = () => {
     setIsOrdered(true);
@@ -78,7 +55,9 @@ const CartCard = (props) => {
               </Button>
             )}
           </div>
-          {isOrdered && cartCtx.order.length > 0 && <CartForm onClick={props.onClickClose} />}
+          {isOrdered && cartCtx.order.length > 0 && (
+            <CartForm onClick={props.onClickClose} />
+          )}
         </Card>
       </section>
     </PortalModal>
