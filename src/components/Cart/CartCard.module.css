@@ -1,11 +1,13 @@
 .cartCard {
+    margin-bottom: 3rem;
     width: 90%;
+    max-height: 70vh;
     max-width: 40rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -60%);
-    z-index: 3;
+    z-index: 30;
     /* animation: orderListAppear 1s ease-out forwards; */
 }
 

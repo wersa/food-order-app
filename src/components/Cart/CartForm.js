@@ -1,16 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useReducer } from "react";
 import Button from "../UI/Button";
 
 import Input from "../UI/Input";
 import classes from "./CartForm.module.css";
 
-const CartForm = () => {
+
+const CartForm = (props) => {
   const [formData, setFormData] = useState({
     name: "",
     street: "",
     code: "",
     city: "",
   });
+  const [isSubmited, setIsSubmited] = useState(false);
+
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -19,6 +22,7 @@ const CartForm = () => {
 
   const handleSubmit = (event) => {
       event.preventDefault();
+      
       console.log('SUBMITED');
   }
 
@@ -79,7 +83,7 @@ const CartForm = () => {
         }}
       />
       <div className={classes.buttons}>
-        <Button type="button" className={classes.buttons__cancel}>
+        <Button type="button" className={classes.buttons__cancel} onClick={props.onClick}>
           Cancel
         </Button>
         <Button type="submit" className={classes.buttons__confirm}>Confirm</Button>
