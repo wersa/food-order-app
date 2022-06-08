@@ -7,8 +7,16 @@
 }
 
 .inputForm__input:focus {
-    border: 2px solid rgb(16, 16, 16); 
+    border: 1px solid rgb(102, 62, 11); 
+    background-color: rgba(255, 221, 170, 0.274);
+
 }
+
+.invalid {
+    border: 1px solid rgb(240, 6, 6); 
+    background-color: rgba(255, 231, 231, 0.274);
+}
+
 
 .inputForm__label {
     font-weight: bold;

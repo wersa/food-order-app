@@ -5,7 +5,7 @@ import classes from "./Input.module.css";
 const Input = React.forwardRef((props, ref) => {
   const formStyles = `${classes.inputForm} ${props.classNameForm}`;
   const labelStyles = `${classes.inputForm__label} ${props.classNameLabel}`;
-  const inputStyles = `${classes.inputForm__input} ${props.classNameInput}`;
+  const inputStyles = `${classes.inputForm__input} ${props.invalid && classes.invalid}`;
 
   return (
     <div className={formStyles}>
