@@ -40,3 +40,8 @@
 .buttons__cancel:hover {
     background-color: #ef541739;
 }
+
+.error {
+    font-size: 0.6rem;
+    color: red;
+}
